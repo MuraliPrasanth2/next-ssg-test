@@ -1,14 +1,13 @@
 import Head from 'next/head';
-import Link from 'next/link';
 
-export default function Home() {
+export default function About() {
   return (
     <>
       <Head>
-        <title>Ninja List | Home</title>
+        <title>Ninja List | About</title>
       </Head>
-      <main>
-        <h1>Homepage</h1>
+      <main className='about'>
+        <h1>About</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis
           magnam quo mollitia. Nihil voluptatum est impedit in repellat, qui et
@@ -20,9 +19,6 @@ export default function Home() {
           delectus voluptatum sed suscipit molestias unde possimus aspernatur
           reiciendis cumque animi nostrum quas.
         </p>
-        <Link href='/ninjas'>
-          <a className='btn'>See Ninja Listing</a>
-        </Link>
       </main>
     </>
   );

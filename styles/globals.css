@@ -13,14 +13,143 @@ a {
 
 * {
   box-sizing: border-box;
+
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+body {
+  background-color: rgb(240, 240, 240);
+  color: #333;
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+header {
+  border-bottom: 1px solid grey;
+  margin-top: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  align-items: flex-end;
+  margin-bottom: 0.7rem;
+  padding-right: 0.5rem;
+}
+
+nav ul li:first-child {
+  margin-right: auto;
+}
+
+nav ul li a {
+  color: #333;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+
+nav ul li a:hover {
+  color: #00539c;
+}
+
+.only-sr {
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+footer {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+
+.btn {
+  padding: 0.5rem 0.625rem;
+  background-color: #4274EF;
+  color: white;
+  border-radius: 0.25rem;
+  margin-top: 1rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p {
+  max-width: 90vw;
+}
+
+.about {
+  align-items: flex-start;
+  max-width: 90vw;
+  margin: auto;
+}
+
+a.active {
+  color: #00539c;
+}
+
+.redirect-link {
+  color: #4274EF;
+}
+
+.ninjas-listing-page {
+  align-items: flex-start;
+  max-width: 90vw;
+  margin: auto;
+}
+
+.ninjas-list-container {
+  width: 100%;
+}
+
+.ninjas-list {
+  list-style-type: none;
+  padding: 0;
+  display: block;
+  width: 100%;
+}
+
+.ninjas-list__item {
+  background-color: white;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.ninjas-list__item a {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+}
+
+.ninjas-list__item:hover {
+  border-left: 5px solid #00539c;
+}
+
+.ninja-details-page {
+  align-items: flex-start;
+  max-width: 90vw;
+  margin-left: auto;
+}
+
+.ninja-details-page h1 {
+  color: #00539c;
+}
+
+.ninja-details-page a {
+  display: block;
 }
